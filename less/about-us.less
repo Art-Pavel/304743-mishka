@@ -1,0 +1,145 @@
+.about-us {
+  background-image: url("");
+  padding-top: 30px;
+  margin-bottom: 25px;
+
+  @media(min-width: 768px) {
+    padding-top: 55px;
+    margin-bottom: 20px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-top: 65px;
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  .clearfix();
+
+  @media(min-width: 768px) {
+    width: 670px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 700px;
+  }
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+
+  @media(min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media(min-width: 1150px) {
+    margin-bottom: 40px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__list--left {
+  width: 100%;
+
+  @media(min-width: 768px) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.about-us__list--right {
+  width: 100%;
+
+  @media(min-width: 768px) {
+    float: right;
+    width: 50%;
+  }
+}
+
+.about-us__item {
+  width: 100%;
+  position: relative;
+  padding-top: 55px;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
+
+  @media(min-width: 768px) {
+
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+}
+
+.about-us__item::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us__item--feature-1::before {
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/icon-feature-1.svg");
+  left: 5px;
+}
+
+.about-us__item--feature-2::before {
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-feature-3.svg");
+  left: 0;
+}
+
+.about-us__item--feature-3::before {
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-feature-5.svg");
+  left: 5px;
+}
+
+.about-us__item--feature-4::before {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-feature-2.svg");
+  left: 3px;
+}
+
+.about-us__item--feature-5::before {
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-feature-4.svg");
+  left: -5px;
+}
+
+.about-us__item--feature-6::before {
+  width: 34px;
+  height: 32px;
+  background-image: url("../img/icon-feature-6.svg");
+  left: 3px;
+}

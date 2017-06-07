@@ -1,0 +1,39 @@
+.field-checkbox {
+  display: block;
+  width: 165px;
+  padding-left: 60px;
+  margin-bottom: 45px;
+  position: relative;
+
+  @media(min-width: 768px) {
+    display: inline-block;
+    width: 160px;
+    margin-right: 10px;
+    padding-left: 80px;
+  }
+}
+
+.fieldset-checkbox:nth-child(2n) {
+  @media(min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+.field-checkbox::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -10px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+
+  @media(min-width: 768px) {
+    width: 50px;
+    height: 48px;
+  }
+}
+
+.field-checkbox__input {
+  display: none;
+}
