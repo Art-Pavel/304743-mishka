@@ -4,9 +4,40 @@ body {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @media(max-width: 768px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden--search {
+  @media(min-width: 768px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }

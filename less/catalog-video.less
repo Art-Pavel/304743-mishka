@@ -1,7 +1,11 @@
 .catalog-video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   .container();
   margin-bottom: 55px;
   position: relative;
+  border: 1px solid #ececec;
   .clearfix();
   box-sizing: border-box;
 
@@ -9,8 +13,9 @@
     margin-bottom: 60px;
   }
 
-    @media(min-width: 1150px) {
+  @media(min-width: 1150px) {
     margin-bottom: 105px;
+    align-items: flex-end;
   }
 }
 
@@ -24,22 +29,20 @@
   font-size: 17px;
   line-height: 24px;
   color: #000;
-  border: 1px solid #ececec;
 
   @media(min-width: 768px) {
-    position: absolute;
-    top: 500px;
-    left: 105px;
-    padding: 0;
-    margin-bottom: 0;
+    padding-left: 110px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     font-size: 20px;
-    border: none;
+    border-bottom: none;
   }
 
   @media(min-width: 1150px) {
-    top: 95px;
-    left: 760px;
-    width: 100px;;
+    padding-left: 0;
+    width:290px;
+    margin-top: 58px;
+    padding-right: 55px;
   }
 }
 
@@ -54,12 +57,12 @@
   background-image: url("../img/icon-video.svg");
 
   @media(min-width: 768px) {
-    top: 0;
-    left: -60px;
+    top: 40px;
+    left: 40px;
   }
 
   @media(min-width: 1150px) {
-    top: -50px;
+    top: -10px;
     left: 0;
   }
 
@@ -72,6 +75,7 @@
   background-image: url("../img/video-mobile@1x.jpg");
 
   @media(min-width: 768px) {
+    order: -5;
     margin-bottom: 0;
     width: 668px;
     height: 455px;
@@ -79,7 +83,9 @@
   }
 
   @media(min-width: 1150px) {
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 680px;
     height: 455px;
     background-image: url("../img/video-desktop@1x.jpg");
@@ -92,22 +98,18 @@
   padding-top: 30px;
   padding-left: 32px;
   padding-right: 32px;
-  border: 1px solid #ececec;
 
   @media(min-width: 768px) {
     width: 668px;
     padding-left: 40px;
     padding-right: 40px;
-    margin: 0 auto;
-    padding-top: 95px;
+    border-top: none;
   }
 
   @media(min-width: 1150px) {
-    float: right;
-    width: 370px;
-    padding-right: 55px;
-    padding-left: 80px;
-    padding-top: 175px;
+    width: 290px;
+    padding-left: 0;
+    padding-top: 20px;
   }
 }
 
