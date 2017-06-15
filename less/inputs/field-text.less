@@ -1,0 +1,38 @@
+.field-text {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.field-text__input {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+
+  @media(min-width: 768px) {
+    width: 375px;
+    margin-left: 18px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 575px;
+  }
+}
+
+.field-text__input--long {
+  @media(min-width: 768px) {
+    width: 425px;
+    margin-left: 20px;
+  }
+
+  @media(min-width: 1150px) {
+    width: 625px;
+  }
+}
+
+.field-text__input--100 {
+    width: 100%;
+    margin: 0;
+}

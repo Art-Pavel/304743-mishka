@@ -1,0 +1,131 @@
+.catalog-video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .container();
+  margin-bottom: 55px;
+  position: relative;
+  border: 1px solid #ececec;
+  .clearfix();
+  box-sizing: border-box;
+
+  @media(min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media(min-width: 1150px) {
+    margin-bottom: 105px;
+    align-items: flex-end;
+  }
+}
+
+.catalog-video__title {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  padding-left: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+
+  @media(min-width: 768px) {
+    padding-left: 110px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: none;
+  }
+
+  @media(min-width: 1150px) {
+    padding-left: 0;
+    width:290px;
+    margin-top: 58px;
+    padding-right: 55px;
+  }
+}
+
+.catalog-video__title::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 32px;
+  height: 22px;
+  .bg();
+  background-image: url("../img/icon-video.svg");
+
+  @media(min-width: 768px) {
+    top: 40px;
+    left: 40px;
+  }
+
+  @media(min-width: 1150px) {
+    top: -10px;
+    left: 0;
+  }
+
+}
+
+.catalog-video__itself {
+  .bg();
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+
+  @media(min-width: 768px) {
+    order: -5;
+    margin-bottom: 0;
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  @media(min-width: 1150px) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 680px;
+    height: 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+}
+
+.catalog-video__text-wrapper {
+  width: 260px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @media(min-width: 768px) {
+    width: 668px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: none;
+  }
+
+  @media(min-width: 1150px) {
+    width: 290px;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+.catalog-video__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media(min-width: 768px) {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  @media(min-width: 1150px) {
+    margin-bottom: 45px;
+  }
+}

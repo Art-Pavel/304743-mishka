@@ -1,0 +1,65 @@
+.cite-descr {
+  padding-top: 85px;
+
+  margin-bottom: 30px;
+  background: #f7f7f7;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+
+  @media(min-width: 768px) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    margin-bottom: 50px;
+    padding-top: 155px;
+    margin-top: -68px;
+  }
+
+  @media(min-width: 1150px) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    margin-top: -68px;
+    margin-bottom: 70px;
+    padding-top: 155px;
+  }
+}
+
+
+
+.cite-descr__wrapper {
+  .container();
+  position: relative;
+}
+
+.cite-descr__wrapper::before {
+
+  @media(min-width: 768px) {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    top: -155px;
+    left: -50px;
+    right: -50px;
+  }
+}
+
+.cite-descr__title {
+  margin: 0;
+  margin-bottom: 125px;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+
+  @media(min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 372px;
+  }
+
+  @media(min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 360px;
+  }
+}
