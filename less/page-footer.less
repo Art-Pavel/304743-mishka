@@ -30,74 +30,121 @@
     display: block;
     width: 102px;
     height: 34px;
-    padding-top: 20px;
+    padding-top: 17px;
     padding-bottom: 20px;
     padding-right: 55px;
   }
 }
 
+.page-footer__logo-icon {
+  fill: #000;
+}
+
+.page-footer__logo:hover .page-footer__logo-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  fill: #bde3dd;
+}
+
 .page-footer__social {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 16px;
   text-align: center;
+
+  @media(min-width: 768px) {
+    margin-left: 26px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+  }
 }
 
 .page-footer__soc-btn {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px;
-  margin-right: 20px;
-
-
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 5px;
+  margin-left: 6px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.page-footer__soc-btn--insta {
+.page-footer__soc-btn:hover svg {
+  fill: #46c1ae;
+}
+
+.page-footer__soc-btn:active svg {
+  fill: #bde3dd;
+}
+
+.page-footer__icon-insta {
   width: 22px;
   height: 22px;
-  background-image: url("../img/icon-insta.svg");
 }
 
-.page-footer__soc-btn--facebook {
+.page-footer__icon-fb {
   width: 14px;
   height: 29px;
-  background-image: url("../img/icon-fb.svg");
 }
 
-.page-footer__soc-btn--twitter {
+.page-footer__icon-twitter {
   width: 24px;
   height: 20px;
-  background-image: url("../img/icon-twitter.svg");
 }
 
 .page-footer__copyright {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
   border-top: 1px solid #e5e5e5;
 
   @media(min-width: 768px) {
     border-top: 0;
+    width: 185px;
+    padding-bottom: 26px;
   }
 }
 
+.page-footer__copyright:hover .page-footer__text-icon {
+  fill: #46c1ae;
+}
+
+.page-footer__copyright:active .page-footer__text-icon {
+  fill: #bde3dd;
+}
+
+.page-footer__copyright:active .page-footer__text {
+  color: #a8a8a8;
+}
+
 .page-footer__text {
-  margin: 0;
+  padding-right: 30px;
+  padding-left: 38px;
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
   font-size: 19px;
   line-height: 23px;
   color: #000;
   font-weight: bold;
+
+  @media(min-width: 768px) {
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
-.page-footer__text--html-logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
+.page-footer__text-icon {
+  position: absolute;
   width: 27px;
   height: 34px;
+  right: 40px;
+  top: -3px;
+  fill: #63d1bb;
 
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  @media(min-width: 768px) {
+    right: 0;
+  }
 }

@@ -1,16 +1,11 @@
 .categories {
   font-size: 0;
-
-  @media(min-width: 768px) {
-    background-image: url("../img/zigzag-fill-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-  }
 }
 
 .categories__wrapper {
+  position: relative;
   @media(min-width: 768px) {
-    width: 670px;
+    width: 668px;
     margin: 0 auto;
   }
 
@@ -21,6 +16,7 @@
 }
 
 .categories__item {
+  position: relative;
   display: block;
   text-decoration: none;
   width: 100%;
@@ -38,12 +34,30 @@
   }
 }
 
+
 .categories__item--left {
-  background: #63d1bb;
+  background-color: #63d1bb;
 }
 
+.categories__item--left:hover {
+  background-color: #59d5bc;
+}
+
+.categories__item--left:active {
+  background-color: #59d5bc;
+}
+
+
 .categories__item--right {
-  background: #56c3b2;
+  background-color: #56c3b2;
+}
+
+.categories__item--right:hover {
+  background-color: #46c1ae;
+}
+
+.categories__item--right:active {
+  background-color: #46c1ae;
 }
 
 .categories__text {
@@ -54,54 +68,60 @@
   box-sizing: border-box;
   padding-right: 130px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 
   @media(min-width: 768px) {
     width: 265px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 27px;
     padding-bottom: 30px;
   }
   @media(min-width: 1150px) {
     width: 455px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding-top: 27px;
+    padding-bottom: 29px;
     padding-right: 315px;
   }
 }
 
-.categories__text::after{
-  position: absolute;
-  content: "";
+.categories__item:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.categories__text--interior::after {
-  right: 35px;
+.categories__item .categories__icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.categories__item:hover .categories__icon {
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.categories__item:active .categories__icon {
+  fill: rgba(20, 144, 128, 0.3);
+}
+
+.categories__icon--interior {
+  width: 41px;
+  height: 62px;
   top: 20px;
-  width: 40px;
-  height: 60px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  right: 35px;
 
   @media(min-width: 768px) {
-    top: 30px;
-    right: 0;
+  top: 30px;
+  right: 35px;
   }
 }
 
-.categories__text--toys::after {
-  right: 25px;
-  top: 20px;
+.categories__icon--toys {
   width: 60px;
   height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  right: 26px;
+  top: 20px;
 
   @media(min-width: 768px) {
+    right: 33px;
     top: 30px;
-    right: 0;
   }
 }

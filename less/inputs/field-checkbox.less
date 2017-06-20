@@ -5,14 +5,19 @@
 
   @media(min-width: 768px) {
     display: inline-block;
-    width: 240px;
-    margin-right: 10px;
+    width: 235px;
+    margin-right: 28px;
+    margin-bottom: 24px;
   }
 }
 
-.fieldset-checkbox:nth-child(2n) {
+.field-checkbox:nth-child(2n) {
   @media(min-width: 768px) {
     margin-right: 0;
+  }
+
+  @media(min-width: 1150px) {
+    margin-right: 28px;
   }
 }
 
@@ -21,14 +26,23 @@
   vertical-align: middle;
   margin-right: 24px;
   position: relative;
-  width: 35px;
+  width: 37px;
   height: 35px;
   border: 2px solid #444444;
 
   @media(min-width: 768px) {
     width: 50px;
     height: 48px;
+    margin-right: 27px;
   }
+}
+
+.field-checkbox__button:hover {
+  border-color: #62d1ba;
+}
+
+.field-checkbox__button:active {
+  border-color: #c7c7c7;
 }
 
 .field-checkbox__button::before {

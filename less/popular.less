@@ -1,38 +1,50 @@
 .popular {
-  border-bottom: 1px solid black;
+  position: relative;
+  margin-bottom: 40px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media(min-width: 1150px) {
+    padding-top: 46px;
+    margin-bottom: 80px;
+  }
+}
+
+.popular::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -42px;
+  height: 7px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  @media(min-width: 768px) {
+  bottom: -70px;
+  height: 20px;
+  }
+
+  @media(min-width: 1150px) {
+    bottom: -95px;
+    height: 26px;
+  }
 }
 
 .popular__wrapper {
   position: relative;
   .container();
 
-  @media(min-width: 1150px) {
-    padding-left: 175px;
-    width: 875px;
-  }
-}
-
-.popular__title {
-  margin: 0;
-  position: absolute;
-  top: 35px;
-  text-transform: uppercase;
-  font-size: 17px;
-  line-height: 20px;
-  color: #63d1bb;
-
   @media(min-width: 768px) {
-    width: 100px;
-    right: 25px;
-    top: 5px;
-    text-align: center;
-
+    width: 670px;
   }
 
   @media(min-width: 1150px) {
-    top: 65px;
-    left: 50px;
-    width: 100px;
-    text-align: center;
+    width: 1050px;
   }
 }
