@@ -5,7 +5,7 @@
   padding-bottom: 15px;
   color: #444444;
   border: 2px solid #444444;
-  background: transparent;
+  background-color: transparent;
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
@@ -16,11 +16,27 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #444444;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #444444;
+  color: #7c7c7c;
+}
+
+.btn--item {
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
 .btn--feedbacks {
+  padding-bottom: 14px;
   @media(min-width: 768px) {
     position: absolute;
     width: 175px;
-    top: 75px;
+    top: 77px;
     right: 0;
   }
 }
@@ -28,7 +44,7 @@
 .btn--contacts {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media(min-width: 768px) {
     width: 230px;
@@ -36,21 +52,22 @@
   }
 
   @media(min-width: 1150px) {
-    position: absolute;
-    bottom: 0;
-    left: 175px;
+    position: static;
+    margin: 0;
+    margin-left: 175px;
   }
 }
 
 .btn--catalog-video {
   margin-bottom: 32px;
+  padding-bottom: 13px;
 
   @media(min-width: 768px) {
     margin-bottom: 45px;
   }
 
   @media(min-width: 1150px) {
-    margin-bottom: 59px;
+    margin-bottom: 62px;
   }
 }
 
@@ -60,12 +77,13 @@
   @media(min-width: 768px) {
     width: 230px;
     position: absolute;
-    left: 0;
-    bottom: 20px;
+    left: 5px;
+    bottom: 15px;
   }
 
   @media(min-width: 1150px) {
     left: 175px;
+    bottom: 16px;
   }
 }
 

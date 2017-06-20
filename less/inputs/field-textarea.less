@@ -1,14 +1,26 @@
 .field-textarea {
+  padding-top: 2px;
+}
 
+.field-textarea__input:hover {
+  border-color: #62d1ba;
+}
+
+.field-textarea__input:ative {
+  border-color: #62d1ba;
 }
 
 .field-textarea__input {
   width: 100%;
-  height: 138px;
+  height: 143px;
   padding: 0;
   padding-left: 15px;
   padding-top: 15px;
   padding-right: 15px;
   box-sizing: border-box;
   border: 2px solid #444444;
+
+  @media(min-width: 768px) {
+    padding-top: 12px;
+  }
 }

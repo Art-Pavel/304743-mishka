@@ -1,6 +1,12 @@
 .field-text {
+  position: relative;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
+  padding-top: 4px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 17px;
+  }
 }
 
 .field-text__input {
@@ -10,15 +16,25 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid black;
+  box-sizing: border-box;
 
   @media(min-width: 768px) {
     width: 375px;
     margin-left: 18px;
+    padding-left: 18px;
   }
 
   @media(min-width: 1150px) {
     width: 575px;
   }
+}
+
+.field-text__input:hover {
+  border-color: #62d1ba;
+}
+
+.field-text__input:active {
+  border-color: #62d1ba;
 }
 
 .field-text__input--long {
@@ -35,4 +51,55 @@
 .field-text__input--100 {
     width: 100%;
     margin: 0;
+}
+
+
+.field-text__icon-phone {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  right: 7px;
+  bottom: 17px;
+  fill: #cccccc;
+
+  @media(min-width: 768px) {
+    right: 25px;
+  }
+
+  @media(min-width: 1150px) {
+    right: 8px;
+  }
+}
+
+.field-text:hover .field-text__icon-phone {
+  fill: #62d1ba;
+}
+
+.field-text:active .field-text__icon-phone {
+  fill: #62d1ba;
+}
+
+.field-text__icon-mail {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 4px;
+  bottom: 10px;
+  fill: #cccccc;
+
+  @media(min-width: 768px) {
+    right: 22px;
+  }
+
+  @media(min-width: 1150px) {
+    right: 4px;
+  }
+}
+
+.field-text:hover .field-text__icon-mail {
+  fill: #62d1ba;
+}
+
+.field-text:active .field-text__icon-mail {
+  fill: #62d1ba;
 }
