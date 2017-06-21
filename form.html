@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -282,20 +281,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMenu = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      navMenu.classList.remove("main-nav--nojs");
-      navToggle.addEventListener("click", function() {
-        if ( navMenu.classList.contains("main-nav--closed") ) {
-          navMenu.classList.remove("main-nav--closed");
-          navMenu.classList.add("main-nav--opened");
-        } else {
-          navMenu.classList.add("main-nav--closed");
-          navMenu.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="js/app.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
