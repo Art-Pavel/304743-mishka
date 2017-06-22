@@ -15,26 +15,38 @@ navToggle.addEventListener("click", function() {
 
 /*Модальное окно*/
 var btn = document.querySelectorAll(".modal-open");
-var modal = document.querySelector(".modal-bg");
+var modal_bg = document.querySelector(".modal-bg");
+var modal = document.querySelector(".modal");
 var close = document.querySelector(".add-to-cart");
 
 for ( var i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function(event) {
     event.preventDefault();
+    modal_bg.classList.add("modal-show");
     modal.classList.add("modal-show");
   })
 };
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
-  if ( modal.classList.contains("modal-show") ) {
+  if ( modal_bg.classList.contains("modal-show") ) {
+    modal_bg.classList.remove("modal-show");
+    modal.classList.remove("modal-show");
+  }
+});
+
+modal_bg.addEventListener("click", function(event) {
+  event.preventDefault();
+  if ( modal_bg.classList.contains("modal-show") ) {
+    modal_bg.classList.remove("modal-show");
     modal.classList.remove("modal-show");
   }
 });
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
-    if ( modal.classList.contains("modal-show") ) {
+    if ( modal_bg.classList.contains("modal-show") ) {
+      modal_bg.classList.remove("modal-show");
       modal.classList.remove("modal-show");
     }
   }

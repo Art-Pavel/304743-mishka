@@ -1,21 +1,20 @@
 {
-  "name": "mishka",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект Мишка",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.7.x",
+    "css-mqpacker": "^5.0.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-less": "1.4.x",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "1.4.0",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-csso": "^2.2.0",
     "grunt-postcss": "0.8.0",
-    "@htmlacademy/editorconfig-cli": "1.x"
-  },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "grunt-svgmin": "^4.0.0",
+    "grunt-svgstore": "^1.0.0"
   },
   "editorconfig-cli": [
     "*.html",
@@ -27,5 +26,12 @@
   ],
   "engines": {
     "node": "6.10"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build \u0026\u0026 grunt serve",
+    "test": "editorconfig-cli"
+  },
+  "version": "0.1.0"
 }
