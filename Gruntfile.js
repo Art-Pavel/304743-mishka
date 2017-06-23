@@ -57,7 +57,7 @@ module.exports = function(grunt) {
               "last 2 versions"
             ]}),
             require("css-mqpacker")({
-              sort: true })
+              sort: false })
           ]
         },
         src: "build/css/*.css"
