@@ -1,11 +1,16 @@
 .field-text {
+  margin: 0;
+  padding: 0;
   position: relative;
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   padding-top: 4px;
 
   @media(min-width: 768px) {
     margin-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -20,37 +25,29 @@
 
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 18px;
   color: rgb(68, 68, 68);
 
   @media(min-width: 768px) {
-    width: 375px;
-    margin-left: 18px;
+    flex-grow: 1;
+    display: block;
+    width: auto;
+    margin-left: 25px;
     padding-left: 18px;
     font-size: 19px;
-    line-height: 19px;
+    line-height: 20px;
   }
 
   @media(min-width: 1150px) {
-    width: 575px;
   }
 }
 
-.field-text__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.field-text__input::placeholder { /* Chrome/Opera/Safari */
   color: rgba(68, 68, 68, 0.3);
   font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
 }
-
-.field-text__input::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(68, 68, 68, 0.3);
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
-.field-text__input:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(68, 68, 68, 0.3);
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
 
 .field-text__input:hover {
   border-color: #62d1ba;
@@ -60,28 +57,14 @@
   border-color: #62d1ba;
 }
 
-.field-text__input--long {
-  @media(min-width: 768px) {
-    width: 425px;
-    margin-left: 20px;
-  }
-
-  @media(min-width: 1150px) {
-    width: 625px;
-  }
-}
-
-.field-text__input--100 {
-    width: 100%;
+.field-text__input--m0 {
     margin: 0;
 
   @media(min-width: 768px) {
-    width: 100%;
     margin: 0;
   }
 
   @media(min-width: 1150px) {
-    width: 100%;
     margin: 0;
   }
 }

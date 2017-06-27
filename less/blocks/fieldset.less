@@ -8,12 +8,21 @@
   }
 }
 
-.fieldset__wrapper--wide {
+.fieldset__wrapper--radio {
   @media(min-width: 768px) {
-    font-size: 0;
+    padding-top: 5px;
+  }
+}
+
+.fieldset__wrapper--checkbox {
+  @media(min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media(min-width: 1150px) {
     width: 875px;
   }
 }
+

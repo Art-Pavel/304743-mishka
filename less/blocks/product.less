@@ -32,10 +32,6 @@
 
   @media(min-width: 768px) {
     flex-basis: 50%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     padding-top: 23px;
@@ -116,6 +112,8 @@
 
 .product__price {
   display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 2px;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
@@ -123,6 +121,7 @@
   @media(min-width: 768px) {
     font-size: 17px;
     padding-left: 4px;
+    padding-bottom: 3px;
   }
 
   @media(min-width: 1150px) {
@@ -134,7 +133,6 @@
   position: absolute;
   background: transparent;
   border: none;
-  cursor: pointer;
 
   right: -24px;
   top: 11px;

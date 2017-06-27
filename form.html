@@ -133,14 +133,14 @@
 
         <div class="order__fieldset">
           <h3 class="order__field-title">Тип</h3>
-          <div class="fieldset__wrapper">
+          <div class="fieldset__wrapper fieldset__wrapper--radio">
             <label class="field-radio order__contact-field" for="interior">
               <input class="field-radio__input" type="radio" id="interior" name="radio">
-              <span class="field-radio__button"></span><span class="field-radio__text">Аксессуар для интерьера</span>
+              <span class="field-radio__button"></span>Аксессуар для интерьера
             </label>
             <label class="field-radio order__contact-field" for="toy">
               <input class="field-radio__input" type="radio" id="toy" name="radio">
-              <span class="field-radio__button"></span><span class="field-radio__text">Детская игрушка</span>
+              <span class="field-radio__button"></span>Детская игрушка
             </label>
           </div>
         </div>
@@ -149,30 +149,30 @@
         <div class="order__fieldset-bg order__fieldset-bg--colors">
           <div class="order__fieldset">
             <h3 class="order__field-title order__field-title--colors">Цвет</h3>
-            <div class="fieldset__wrapper fieldset__wrapper--wide">
+            <div class="fieldset__wrapper fieldset__wrapper--checkbox">
               <label class="field-checkbox order__contact-field" for="white">
                 <input class="field-checkbox__input" type="checkbox" id="white" name="white">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">Белый</span>
+                <span class="field-checkbox__button"></span>Белый
               </label>
               <label class="field-checkbox order__contact-field" for="grey">
                 <input class="field-checkbox__input" type="checkbox" id="grey" name="grey">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">Серый</span>
+                <span class="field-checkbox__button"></span>Серый
               </label>
               <label class="field-checkbox order__contact-field" for="tiffany">
                 <input class="field-checkbox__input" type="checkbox" id="tiffany" name="tiffany">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">&laquo;Тиффани&raquo;</span>
+                <span class="field-checkbox__button"></span>&laquo;Тиффани&raquo;
               </label>
               <label class="field-checkbox order__contact-field" for="black">
                 <input class="field-checkbox__input" type="checkbox" id="black" name="black">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">Черный</span>
+                <span class="field-checkbox__button"></span>Черный
               </label>
               <label class="field-checkbox order__contact-field" for="pink">
                 <input class="field-checkbox__input" type="checkbox" id="pink" name="pink">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">Розовый</span>
+                <span class="field-checkbox__button"></span>Розовый
               </label>
               <label class="field-checkbox order__contact-field" for="orange">
                 <input class="field-checkbox__input" type="checkbox" id="orange" name="orange">
-                <span class="field-checkbox__button"></span><span class="field-checkbox__text">Оранжевый</span>
+                <span class="field-checkbox__button"></span>Оранжевый
               </label>
             </div>
           </div>
@@ -180,10 +180,10 @@
 
 
         <div class="order__fieldset order__fieldset--name">
-          <h3 class="order__field-title">ФИО</h3>
+          <h3 class="order__field-title order__field-title--name">ФИО</h3>
           <div class="fieldset__wrapper">
             <label class="field-text order__contact-field" for="name">
-              Имя: <input class="field-text__input field-text__input--long" type="text" id="name" placeholder="Введите ваше имя*">
+              Имя: <input class="field-text__input" type="text" id="name" placeholder="Введите ваше имя*">
             </label>
             <label class="field-text order__contact-field" for="surname">
               Фамилия: <input class="field-text__input" type="text" id="surname" placeholder="Укажите фамилию*">
@@ -200,7 +200,7 @@
             <h3 class="order__field-title">Тел</h3>
             <div class="fieldset__wrapper">
               <label class="field-text order__contact-field" for="tel">
-                <input class="field-text__input field-text__input--100" type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
+                <input class="field-text__input field-text__input--m0" type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
                 <svg class="field-text__icon-phone" width="25px" height="24px">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
                 </svg>
@@ -212,7 +212,7 @@
             <h3 class="order__field-title">e-mail</h3>
             <div class="fieldset__wrapper">
               <label class="field-text order__contact-field" for="e-mail">
-                <input class="field-text__input field-text__input--100" type="text" id="e-mail" placeholder="Ваш Email*">
+                <input class="field-text__input field-text__input--m0" type="email" id="e-mail" placeholder="Ваш Email*">
                 <svg class="field-text__icon-mail" width="32px" height="32px">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
                 </svg>
@@ -220,8 +220,6 @@
             </div>
           </div>
         </div>
-
-
 
         <div class="order__fieldset">
           <h3 class="order__field-title">Доп</h3>

@@ -175,26 +175,26 @@
           <img class="item__image" alt="photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg">
           </picture>
           <span class="item__price">Цена: 990 руб.</span>
-          <button class="btn btn--item modal-open" type="button">Заказать</button>
+          <a href="form.html" class="btn btn--item modal-open">Заказать</a>
           </div>
       </div>
     </section>
 
-    <div class="modal-bg"></div>
-      <div class="modal">
+    <div class="modal__bg"></div>
+      <div class="modal__window">
         <div class="modal__wrapper">
           <h3 class="modal__title">Добавить в корзину</h3>
           <p class="modal__text">Выберете размер:</p>
-          <form action="get" class="modal__form">
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="modal__radio-wrapper">
-              <input type="radio" class="modal__radio" name="size" id="S">
+              <input type="radio" class="modal__radio" name="size" id="S" value="S">
               <label for="S" class="modal__label">S</label>
-              <input type="radio" class="modal__radio" name="size" id="M">
+              <input type="radio" class="modal__radio" name="size" id="M" value="M">
               <label for="M" class="modal__label">M</label>
-              <input type="radio" class="modal__radio" name="size" id="L">
+              <input type="radio" class="modal__radio" name="size" id="L" value="L">
               <label for="L" class="modal__label">L</label>
             </div>
-            <button class="btn btn--modal add-to-cart" type="button">Добавить</button>
+            <button class="btn btn--modal add-to-cart" type="submit">Добавить</button>
           </form>
         </div>
       </div>
@@ -237,7 +237,7 @@
             </svg>
           </span>
         </div>
-        <button class="btn btn--feedbacks" type="button">Написать</button>
+        <a href="#" class="btn btn--feedbacks">Написать</a>
       </div>
     </section>
 
@@ -255,7 +255,7 @@
           </div>
         </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.2053502791287!2d30.347095487850446!3d59.93241666912991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1496581785075" style="border:0" allowfullscreen></iframe>
-        <button class="btn btn--contacts" type="button">Напишите нам</button>
+        <a href="#" class="btn btn--contacts">Напишите нам</a>
       </div>
     </section>
     <footer class="page-footer">

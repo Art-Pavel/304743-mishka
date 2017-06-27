@@ -1,11 +1,12 @@
 .btn {
   display: block;
+  text-decoration: none;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #444444;
   border: 2px solid #444444;
-  background-color: transparent;
+  background-color: #fff;
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
@@ -54,6 +55,7 @@
 
   @media(min-width: 1150px) {
     position: static;
+    clear: left;
     margin: 0;
     margin-left: 175px;
   }
@@ -73,8 +75,6 @@
 }
 
 .btn--form {
-  display: inline-block;
-
   @media(min-width: 768px) {
     width: 230px;
     position: absolute;

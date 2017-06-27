@@ -140,12 +140,12 @@
           <p class="product__text">Рост 30 см, вес 200 г</p>
           <div class="product__buy">
             <span class="product__price">1 200 руб.</span>
-            <button type="button" class="product__button modal-open">
+            <a href="form.html" class="product__button modal-open">
               <span class="hidden">В корзину</span>
               <svg class="product__icon" width="20.294px" height="18.849px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </li>
@@ -162,12 +162,12 @@
           <p class="product__text">Диаметр 15 см, высота 10 см</p>
           <div class="product__buy">
             <span class="product__price">690 руб.</span>
-            <button type="button" class="product__button modal-open">
+            <a href="form.html" class="product__button modal-open">
               <span class="hidden">В корзину</span>
               <svg class="product__icon" width="20.294px" height="18.849px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </li>
@@ -185,32 +185,32 @@
           <p class="product__text">Диаметр 30 см, высота 30 см</p>
           <div class="product__buy">
             <span class="product__price">1 500 руб.</span>
-            <button type="button" class="product__button modal-open">
+            <a href="form.html" class="product__button modal-open">
               <span class="hidden">В корзину</span>
               <svg class="product__icon" width="20.294px" height="18.849px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </li>
     </ul>
 
-    <div class="modal-bg"></div>
-      <div class="modal">
+    <div class="modal__bg"></div>
+      <div class="modal__window">
         <div class="modal__wrapper">
           <h3 class="modal__title">Добавить в корзину</h3>
           <p class="modal__text">Выберете размер:</p>
-          <form action="get" class="modal__form">
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="modal__radio-wrapper">
-              <input type="radio" class="modal__radio" name="size" id="S">
+              <input type="radio" class="modal__radio" name="size" id="S" value="S">
               <label for="S" class="modal__label">S</label>
-              <input type="radio" class="modal__radio" name="size" id="M">
+              <input type="radio" class="modal__radio" name="size" id="M" value="M">
               <label for="M" class="modal__label">M</label>
-              <input type="radio" class="modal__radio" name="size" id="L">
+              <input type="radio" class="modal__radio" name="size" id="L" value="L">
               <label for="L" class="modal__label">L</label>
             </div>
-            <button class="btn btn--modal add-to-cart" type="button">Добавить</button>
+            <button class="btn btn--modal add-to-cart" type="submit">Добавить</button>
           </form>
         </div>
       </div>
