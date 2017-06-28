@@ -3,12 +3,10 @@
 }
 
 .product__link {
-  line-height: 0;
-}
-
-.product__pict {
+  display: block;
   width: 260px;
   height: 195px;
+  line-height: 0;
 
   @media(min-width: 768px) {
     width: 334px;
@@ -19,6 +17,11 @@
     width: 316px;
     height: 462px;
   }
+}
+
+.product__pict {
+  width: 100%;
+  height: auto;
 }
 
 .product__wrapper {

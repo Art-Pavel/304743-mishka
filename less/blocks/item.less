@@ -148,9 +148,7 @@
   }
 }
 
-
-.item__image {
-  display: block;
+.item__image-wrapper {
   margin-bottom: 24px;
   height: 315px;
   width: 260px;
@@ -167,8 +165,13 @@
   @media(min-width: 1150px) {
     width: 525px;
     height: 635px;
-    top: -60px;
+    top: -53px;
   }
+}
+
+.item__image {
+  width: 100%;
+  height: auto;
 }
 
 .item__price {
